@@ -1,5 +1,26 @@
+#list of numbers put in directly as an argument
+owls = [2, 6, 14]
+total = 0
+for mice in owls:
+    #the numbers inside of "owls" are now identified as "mice"
+    total = total + mice
+print(total)
+
+#variable created and entered as an argument
+x = 3
+#x is worth 3
+owls = [x, x * 2]
+total = 0
+for mice in owls:
+    total = total + mice
+    #adds mice together; x and x * 2 are calculated and added together (i.e., 3, 3 * 2 = 3 + 6 = 9)
+print(total)
+
+#value returned into a variable and that variable printed to the terminal
 def double(sequence):
-  result = []
-  for element in sequence:
-    result = result + [element * 2]
-  return result
+    result = []
+    for element in sequence:
+        result = result + [element * 2]
+    return result
+
+print(double([5]))
